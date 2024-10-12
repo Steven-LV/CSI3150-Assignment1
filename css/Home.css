@@ -1,0 +1,88 @@
+/* Import ggole api font */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+
+* {
+  /* supress browser default and select alt box model */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fredoka", sans-serif, Tahoma;
+  /* Set variables for colors */
+  --bg-primary: #174139;
+  --bg-secondary: #44736a;
+  --font-color-primary: #b9abed;
+  --font-color-secondary: #bed6a1;
+  --backup-color: #049793;
+}
+
+/* This styling is desktop first */
+body {
+  height: 100vh;
+  background: var(--bg-primary);
+}
+
+.hero {
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 50px;
+  margin: 0 50px;;
+}
+
+.hero img {
+  width: 300px;
+  height: 350px;
+  margin-top: 0px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.hero blockquote {
+  color: var(--font-color-secondary);
+  margin-top: 60px;
+}
+
+.hero .bio {
+  color: var(--font-color-primary);
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* Style Progress bar */
+
+.hero .progress-bar {
+  width: 250px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--bg-secondary);
+  padding: 10px;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.hero .progress-bar h3 {
+  color: var(--font-color-secondary);
+  padding: 5px;
+}
+
+.hero .progress-bar p {
+  color: var(--font-color-secondary);
+  padding: 5px;
+}
+
+.hero .progress-bar meter {
+    width: 200px;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: var(--font-color-primary);
+}
+
+.b2{
+    margin-top: 50px;
+}

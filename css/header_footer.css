@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+* {
+  /* supress browser default and select alt box model */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fredoka", sans-serif, Tahoma;
+  /* Set variables for colors */
+  --bg-primary: #174139;
+  --bg-secondary: #44736a;
+  --font-color-primary: #b9abed;
+  --font-color-secondary: #bed6a1;
+  --backup-color: #049793;
+}
+
+/* This styling is desktop first */
+body {
+  height: 100vh;
+  background: var(--bg-primary);
+}
+
+/* Style header/navbar */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 50px;
+}
+
+/* style the children of header */
+.navbar h2 {
+  color: var(--font-color-primary);
+  font-weight: 700;
+}
+
+.navbar nav ul {
+  display: flex;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--font-color-secondary);
+  font-size: 16px;
+  margin-right: 25px;
+  transition: color 0.3 ease; /*transition must be triggered by an event*/
+}
+
+/* event that triggers line 54 and specifies outcome of transition */
+.navbar ul li:hover a {
+  color: var(--font-color-primary);
+}
+
+/* remove margin of right most list item see line 53 */
+.navbar ul li:last-child a {
+  margin-right: 0;
+}
+
+/* style of hire me button */
+.hire-button {
+  background: var(--bg-secondary);
+  color: var(--font-color-primary);
+  padding: 6px 16px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3 ease;
+}
+
+.hire-button:hover {
+  background: var(--font-color-secondary);
+  color: var(--bg-primary);
+}
+
+footer{
+    position: relative;
+    background: var(--font-color-secondary);
+    padding: 40px 50px 40px;
+}
+
+footer .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .info p{
+    color: var(--bg-primary);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+footer .info p a{
+    display: block;
+    text-decoration: none;
+    color: var(--font-color-primary);
+    font-size: 14px;
+}

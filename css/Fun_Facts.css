@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+* {
+  /* supress browser default and select alt box model */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fredoka", sans-serif, Tahoma;
+  /* Set variables for colors */
+  --bg-primary: #174139;
+  --bg-secondary: #44736a;
+  --font-color-primary: #b9abed;
+  --font-color-secondary: #bed6a1;
+  --backup-color: #049793;
+}
+
+/* This styling is desktop first */
+body {
+  height: 100vh;
+  background: var(--bg-primary);
+}
+
+.main h3{
+  width: 300px;
+  height: 70px;
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--font-color-secondary);
+  color: var(--bg-primary);
+  padding: 10px;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.main h5{
+  width: 220px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--bg-secondary);
+  color: var(--font-color-secondary);
+  padding: 10px;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.main .fav-book{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main .fav-book .left{
+  margin: 0 50px;
+  padding: 0 25px;
+}
+
+.main .fav-book .left img{
+  border-radius: 15px;
+}
+
+.main .fav-book .right{
+  background: var(--bg-secondary);
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 50px;
+}
+
+.main .fav-book .right p{
+  color: var(--font-color-secondary);
+  font-size: 20px;
+}
+
+.main .fav-book .right p a{
+  color: var(--font-color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.main .fav-song{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 200px;
+}
+
+.main .fav-show{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 200px;
+}

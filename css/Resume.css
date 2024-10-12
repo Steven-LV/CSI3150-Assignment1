@@ -1,0 +1,173 @@
+* {
+  /* supress browser default and select alt box model */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fredoka", sans-serif, Tahoma;
+  /* Set variables for colors */
+  --bg-primary: #174139;
+  --bg-secondary: #44736a;
+  --font-color-primary: #b9abed;
+  --font-color-secondary: #bed6a1;
+  --backup-color: #049793;
+}
+
+/* This styling is desktop first */
+body {
+  height: 100vh;
+  background: var(--bg-primary);
+}
+
+.main h3{
+  width: 225px;
+  height: 60px;
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--font-color-secondary);
+  color: var(--bg-primary);
+  padding: 10px;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.main .same{
+  width: 150px;
+  height: 60px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--bg-secondary);
+  color: var(--font-color-secondary);
+  padding: 10px;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.main .contact-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main .contact-info p{
+  color: var(--font-color-primary);
+  font-size: 20px;
+  margin: 0 20px;
+}
+
+.main .obj{
+  width: 150px;
+  height: 60px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--bg-secondary);
+  color: var(--font-color-secondary);
+  padding: 10px;
+  border-radius: 15px;
+  margin: 50px 45%;
+}
+
+.main .objective{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .objective p{
+  color: var(--font-color-secondary);
+  font-size: 20px;
+  margin: 0 20px;
+}
+
+.main .pro-experience{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.main .pro-experience h5{
+  color: var(--font-color-secondary);
+  font-size: 24px;
+  padding: 10px;
+}
+
+.main .pro-experience p{
+  color: var(--font-color-primary);
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.main .education{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main .education .left{
+  width: 680px;
+}
+
+.main .education .left table{
+  width: 50%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-size: 16px;
+  background-color: var(--backup-color);
+}
+        
+.main .education .left table th, td{
+  padding: 10px;
+  border: 1px solid var(--font-color-primary);
+  text-align: left;
+}
+        
+.main .education .left table th{
+  background-color: var(--font-color-secondary);
+  color: var(--bg-primary);
+}
+        
+.main .education .left table tr:nth-child(even){
+  background-color: var(--bg-secondary);
+}
+
+.main .education .right{
+  width: 420px;
+}
+
+.main .education .right img{
+  width: 300px;
+  height: 300px;
+  border-radius: 25px;
+}
+
+.main .extra{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main .extra .left img{
+  height: 300px;
+  margin: 20px 50px;
+}
+
+.main .extra .right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main .extra .right p{
+  color: var(--font-color-primary);
+  padding: 10px;
+}
+
